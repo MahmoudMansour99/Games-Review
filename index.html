@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/logo-sm.png" type="image/x-icon" />
+    <title>Game Review</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index_style.css" />
+  </head>
+  <body>
+    <div class="full-games">
+      <header></header>
+
+      <nav
+        class="navbar navbar-expand-lg position-sticky top-0 z-3 px-5 mx-5 py-0"
+      >
+        <div class="container rounded-4 shadow px-4 mx-5 py-2">
+          <h5 class="navbar-brand">
+            <img src="./images/logo-sm.png" width="40" alt="" />
+            GAME REVIEWS
+          </h5>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a
+                id="mmorpgBtn"
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                >MMORPG</a
+              >
+              <a id="shooterBtn" class="nav-link" href="#">SHOOTER</a>
+              <a id="sailingBtn" class="nav-link" href="#">SAILING</a>
+              <a id="permadeathBtn" class="nav-link" href="#">PERMADEATH</a>
+              <a id="superheroBtn" class="nav-link" href="#">SUPERHERO</a>
+              <a id="pixelBtn" class="nav-link" href="#">PIXEL</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <main class="mt-5">
+        <div class="container">
+          <div class="row g-4"></div>
+        </div>
+      </main>
+    </div>
+
+    <section class="game-details d-none">
+      <div class="container">
+        <div
+          class="game-header d-flex justify-content-between align-items-center"
+        >
+          <h1 class="text-center h3 py-4">Details Game</h1>
+          <button class="btn-close btn-close-white"></button>
+        </div>
+        <div class="game-content row g-4"></div>
+      </div>
+    </section>
+
+    <div id="loading-spinner" class="d-none"></div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+    <!-- <script src="js/index_js.js"></script> -->
+  </body>
+</html>
